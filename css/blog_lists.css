@@ -1,0 +1,362 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    padding: 25px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo a {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    font-style: normal;
+    color: #000;
+    text-decoration: none;
+    padding-left: 40px;
+}
+
+.logo a span {
+    color: orange;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    padding: 0px 15px;
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+}
+
+.social-icons a {
+    padding: 0px 14px;
+    color: #000;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.line::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #00000032;
+    top: 79px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo{
+        padding-top: 10px;
+    }
+    .hamburger{
+        display: block;
+        width: 30px;
+        height: 20px;
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        transform: rotate(0deg);
+        transition: transform 0.3s ease;
+    }
+    .nav-links {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        background-color: orange;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        height: 430px;
+        z-index: 10000;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 30px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .social-icons {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo a {
+        font-size: 20px;
+    }
+
+    .nav-links li a {
+        font-size: 14px;
+    }
+
+    .hamburger {
+        font-size: 24px;
+    }
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.heading h1{
+    padding-top: 55px;
+    font-family: Inter;
+font-size: 64px;
+font-weight: 600;
+line-height: 77.45px;
+letter-spacing: -0.04em;
+text-align: center;
+}
+.heading p{
+    padding-top: 20px;
+    font-family: "Inter", sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+text-align: center;
+color:#00000099;
+}
+.search_box{
+    padding-top: 80px;
+    position: relative;
+}
+.search_box input{
+width: 700px;
+height: 80px;
+top: 399px;
+left: 370px;
+border-radius: 20px;
+border: 1px solid #0000001A;
+font-family: "Inter", sans-serif;
+font-size: 14px;
+padding-left: 30px;
+}
+.search_btn{
+    position: absolute;
+    width: 160px;
+    height: 60px;
+    top:90px;
+    right: 70px;
+font-size: 14px;
+font-weight: 600;
+line-height: 16.94px;
+letter-spacing: -0.02em;
+border-radius: 20px;
+cursor: pointer;
+background: #000000;
+color: #fff;
+}
+@media screen and (max-width:960px){
+    main{
+        flex-direction: column;
+    }
+   .heading h1{
+    font-size: 50px;
+   }
+   .heading p{
+        padding: 15px 30px;
+        font-size: 14px;
+   }
+   .search_box{
+        padding: 30px 10px;
+   }
+   .search_box input{
+        width: 100%;
+        padding-left: 10px;
+        font-size: 12px;
+   }
+   .search_btn{
+    position: absolute;
+    top: 40px;
+    right: 20px;
+   }
+}
+#inbox{
+    width: 100%;
+    margin-top: 90px;
+    margin-bottom: 190px;
+    position: relative;
+}
+.inbox_box .container{
+    width: 100%;
+height: 442px;
+top: 2223px;
+left: 80px;
+gap: 0px;
+border-radius: 60px;
+opacity: 1;
+    background: #E7F9FD;
+}
+.inbox_content{
+position: relative;
+width: 100%;
+text-align: center;
+padding-top: 80px;
+}
+.inbox_box .container h1{
+font-family: Inter;
+font-size: 48px;
+font-weight: 600;
+line-height: 58.09px;
+letter-spacing: -0.04em;
+padding-bottom: 20px;
+}
+.inbox_box .container p{
+font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+text-align: center;
+color: #00000099;
+}
+.search_box_1{
+    padding-top: 60px;
+    position: relative;
+}
+.search_box_1 input{
+width: 480px;
+height: 80px;
+top: 430px;
+left: 370px;
+border-radius: 20px;
+border: 1px solid #0000001A;
+font-family: "Inter", sans-serif;
+font-size: 14px;
+padding-left: 30px;
+}
+.search_box_1 .search_btn{
+    position: absolute;
+    width: 160px;
+    height: 60px;
+    top:70px;
+    right: 327px;
+font-size: 14px;
+font-weight: 600;
+line-height: 16.94px;
+letter-spacing: -0.02em;
+border-radius: 20px;
+cursor: pointer;
+background: #000000;
+color: #fff;
+}
+.inbox_content_1{
+position: relative;
+}
+.inbox_img_1{
+position: absolute;
+right: -10px;
+top:140px;
+width: 220px;
+height: 220px;
+}
+.inbox_img_2{
+    position: absolute;
+    left: -10px;
+    top:140px;
+    width: 220px;
+    height: 220px;
+}
+.inbox_img_3{
+    position: absolute;
+    right: 225px;
+    top:180px;
+    width: 66.85px;
+height: 90.96px;
+rotate: -30deg;
+}
+@media screen and (max-width:960px) {
+    .inbox_content{
+        padding-top: 40px;
+    }
+    .inbox_img img{
+        display: none;
+    }
+    .search_box_1{
+        padding: 30px 10px;
+   }
+   .search_box_1 input{
+        width: 100%;
+        padding-left: 10px;
+        font-size: 12px;
+   }
+   .search_box_1 .search_btn{
+    position: absolute;
+    top: 40px;
+    right: 20px;
+   }
+}
+/* pagination */
+#pagination{
+    margin: 90px 0px 140px 0px;
+}
+#pagination .box{
+    text-align: center;
+}
+#pagination .box a{
+display: inline-block;
+width: 64px;
+height: 64px;
+border-radius: 16px;
+border: 1px solid #0000001A; 
+text-decoration: none;
+color: #000000;
+font-family: Inter;
+font-size: 18px;
+font-weight: 700;
+line-height: 21.78px;
+letter-spacing: -0.02em;
+text-align: center;
+padding-top: 20px;
+margin-right: 10px;
+}
+#pagination .box a.active{
+    color: #fff;
+    background: #000000;
+}
+@media screen and (max-width:960px) {
+    #pagination .box a.hide{
+        display: none;
+    }
+}
