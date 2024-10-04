@@ -327,9 +327,258 @@ rotate: -30deg;
     right: 20px;
    }
 }
+/* Blog_lists */
+
+#blog_posts {
+    margin-top: 90px;
+}
+
+.blog_1,.blog_2,.blog_3,.blog_4,.blog_5,.blog_6 {
+    display: flex;
+    flex-direction: row; /* Default side-by-side layout */
+    margin-bottom: 40px;
+}
+
+.blog_1 img {
+   width: 61%;
+    height: 200px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+.blog_2 img {
+    width:61%;
+    height: 200px;
+    border-radius: 20px;
+    margin-right: 20px;
+}.blog_3 img {
+    width:34%;
+    height: 200px;
+    border-radius: 20px;
+    margin-right: 20px;
+}.blog_4 img {
+    width:65%;
+    height: 200px;
+    border-radius: 20px;
+    margin-right: 20px;
+}.blog_5 img {
+    width:65%;
+    height: 200px;
+    border-radius: 20px;
+    margin-right: 20px;
+}.blog_6 img {
+    width:65%;
+    height: 200px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+.blog_1 h1 {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.05px;
+    letter-spacing: -0.04em;
+    text-align: left;
+}.blog_2 h1 {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.05px;
+    letter-spacing: -0.04em;
+    text-align: left;
+}.blog_3 h1 {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.05px;
+    letter-spacing: -0.04em;
+    text-align: left;
+}.blog_4 h1 {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.05px;
+    letter-spacing: -0.04em;
+    text-align: left;
+}.blog_5 h1 {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.05px;
+    letter-spacing: -0.04em;
+    text-align: left;
+}.blog_6 h1 {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.05px;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+
+.blog_1 p {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #00000099;
+}
+.blog_2 p {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #00000099;
+}.blog_3 p {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #00000099;
+}.blog_4 p {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #00000099;
+}.blog_5 p {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #00000099;
+}.blog_6 p {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #00000099;
+}
+.minidiv {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.minidiv img {
+    width: 40px;
+    height: 40px;
+}
+
+.minidiv h1 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    padding-top: 10px;
+    padding-right: -5px;
+    margin-right: 60px;
+}
+
+.minidiv span {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #00000099;
+}
+.taste_heading h1{
+font-family: Inter;
+font-size: 32px;
+font-weight: 600;
+line-height: 38.73px;
+letter-spacing: -0.04em;
+text-align: left;
+padding-bottom: 10px;
+}
+.taste_box_1{
+    display: flex;
+    margin-bottom: 20px;
+}
+.taste_box_1 img{
+    width: 180px;
+height: 120px;
+border-radius: 20px;
+margin-right: 20px;
+}
+.taste_box_1 h1{
+    font-family: Inter;
+font-size: 20px;
+font-weight: 600;
+line-height: 28px;
+letter-spacing: -0.04em;
+text-align: left;
+}
+.taste_box_1 span{
+    font-family: Inter;
+font-size: 14px;
+font-weight: 500;
+line-height: 16.94px;
+letter-spacing: -0.02em;
+text-align: left;
+color: #00000099;
+}
+/* Media Query for Mobile/Tablet */
+@media (max-width: 768px) {
+    .blog_1,.blog_2,.blog_3,.blog_4,.blog_5,.blog_6 {
+        flex-direction: column; /* Change to column layout on smaller screens */
+        align-items: center; /* Center the content */
+    }
+
+    .blog_1 img {
+        margin-right: 0; 
+        margin-bottom: 20px;
+width: 100%;
+    }
+    .blog_2 img {
+        margin-right: 0; 
+        margin-bottom: 20px;
+width: 100%;
+    }
+    .blog_3 img {
+        margin-right: 0; 
+        margin-bottom: 20px;
+width: 100%;
+    }
+    .blog_4 img {
+        margin-right: 0; 
+        margin-bottom: 20px;
+width: 100%;
+    }
+    .blog_5 img {
+        margin-right: 0; 
+        margin-bottom: 20px;
+width: 100%;
+    }
+    .blog_6 img {
+        margin-right: 0; 
+        margin-bottom: 20px;
+width: 100%;
+    }
+    .minidiv img{
+        width: 30px;
+        height: 30px;
+        margin-top: 20px;
+        margin-right: 2px;
+    }
+    .minidiv h1{
+        padding-left: 10px;
+    }
+}
+
+
 /* pagination */
 #pagination{
-    margin: 90px 0px 140px 0px;
+    margin: 40px 0px 170px 0px;
 }
 #pagination .box{
     text-align: center;
