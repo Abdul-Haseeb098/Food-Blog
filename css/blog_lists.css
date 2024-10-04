@@ -340,33 +340,33 @@ rotate: -30deg;
 }
 
 .blog_1 img {
-   width: 61%;
+   width: 70%;
     height: 200px;
     border-radius: 20px;
     margin-right: 20px;
 }
 .blog_2 img {
-    width:61%;
+    width: 70%;
     height: 200px;
     border-radius: 20px;
     margin-right: 20px;
 }.blog_3 img {
-    width:34%;
+    width:70%;
     height: 200px;
     border-radius: 20px;
     margin-right: 20px;
 }.blog_4 img {
-    width:65%;
+    width:70%;
     height: 200px;
     border-radius: 20px;
     margin-right: 20px;
 }.blog_5 img {
-    width:65%;
+    width:70%;
     height: 200px;
     border-radius: 20px;
     margin-right: 20px;
 }.blog_6 img {
-    width:65%;
+    width:70%;
     height: 200px;
     border-radius: 20px;
     margin-right: 20px;
@@ -529,13 +529,13 @@ text-align: left;
 color: #00000099;
 }
 #taste1{
-    width: 75%;
+    width: 105%;
 }
 #taste2{
-    width: 56%;
+    width: 77%;
 }
 #taste3{
-    width: 75%;
+    width: 100%;
 }
 #ad{
     margin-top: 90px;
