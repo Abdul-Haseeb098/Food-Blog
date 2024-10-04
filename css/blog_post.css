@@ -149,6 +149,16 @@
     text-align: center;
     padding-left: 250px;
     margin-top: 30px;
+    position: relative;
+}
+.line_1{
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    background: #0000001A;
+    top: 20px;
+    left: 420px;
+    rotate: 90deg;
 }
 .blog_header h1{
     font-family: Inter;
