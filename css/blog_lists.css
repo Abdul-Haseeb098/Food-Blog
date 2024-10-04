@@ -339,37 +339,24 @@ rotate: -30deg;
     margin-bottom: 40px;
 }
 
-.blog_1 img {
-   width: 70%;
-    height: 200px;
+.blog_1 img,
+.blog_2 img,
+.blog_3 img {
+    width: 100%; /* Set width to 70% */
+    height: 250px; /* Maintain aspect ratio */
     border-radius: 20px;
     margin-right: 20px;
+    object-fit: cover; /* Ensures the image covers its container without distortion */
 }
-.blog_2 img {
-    width: 70%;
-    height: 200px;
+
+.blog_4 img,
+.blog_5 img,
+.blog_6 img{
+    width: 100%; /* Set width to 70% */
+    height: 250px; /* Maintain aspect ratio */
     border-radius: 20px;
     margin-right: 20px;
-}.blog_3 img {
-    width:70%;
-    height: 200px;
-    border-radius: 20px;
-    margin-right: 20px;
-}.blog_4 img {
-    width:70%;
-    height: 200px;
-    border-radius: 20px;
-    margin-right: 20px;
-}.blog_5 img {
-    width:70%;
-    height: 200px;
-    border-radius: 20px;
-    margin-right: 20px;
-}.blog_6 img {
-    width:70%;
-    height: 200px;
-    border-radius: 20px;
-    margin-right: 20px;
+    object-fit: cover;
 }
 .blog_1 h1 {
     font-family: Inter;
@@ -500,48 +487,65 @@ letter-spacing: -0.04em;
 text-align: left;
 padding-bottom: 20px;
 }
-.taste_box_1{
+.taste_box_1 {
     display: flex;
+    align-items: center; /* Aligns items vertically */
     margin-bottom: 20px;
 }
-.taste_box_1 img{
-    width: 180px;
-height: 120px;
-border-radius: 20px;
-margin-right: 20px;
+
+.taste_image {
+    width: 180px; /* Set consistent width */
+    height: 120px; /* Set consistent height */
+    border-radius: 20px;
+    margin-right: 20px;
+    object-fit: cover; /* Prevents stretching */
 }
-.taste_box_1 h1{
+
+.taste_box_1 h1 {
     font-family: Inter;
-font-size: 20px;
-font-weight: 600;
-line-height: 28px;
-letter-spacing: -0.04em;
-text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.04em;
+    text-align: left;
     padding-bottom: 10px;
 }
-.taste_box_1 span{
+
+.taste_box_1 span {
     font-family: Inter;
-font-size: 14px;
-font-weight: 500;
-line-height: 16.94px;
-letter-spacing: -0.02em;
-text-align: left;
-color: #00000099;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #00000099;
 }
-#taste1{
-    width: 105%;
+.taste_box_1:nth-child(1) img{
+    width: 80%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 20px;
 }
-#taste2{
-    width: 77%;
+.taste_box_1:nth-child(2) img{
+    width: 57%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-right: 20px;
 }
-#taste3{
-    width: 100%;
+.taste_box_1:nth-child(3) img{
+    width: 72%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-right: 20px;
 }
 #ad{
+    width: 100%;
     margin-top: 90px;
 }
 #ad .container{
-    width: 400px;
+    width: 100%;
     height: 434px;
     background: linear-gradient(180deg, #357355 0%, #1D483B 100%);
     position: relative
@@ -554,19 +558,22 @@ line-height: 30px;
 text-align: center;
 color: #FFFFFF;
 position: absolute;
-top: 30px;
-left: 28%;
+top: 13%;
+left: 35%;
+transform: translate(-13%,-35%);
 }
 #ad .container img{
     width: 354px;
 height: 336px;
 position: absolute;
-    top: 94px;
+top: 58%;
+left: 50%;
+transform: translate(-50%,-50%);
 }
 #ad .container span{
     position: absolute;
-    bottom: 45px;
-    left: 31%;
+    bottom: 10%;
+    left: 35%;
     font-family: Inter;
 font-size: 14px;
 font-weight: 500;
