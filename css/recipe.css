@@ -1,0 +1,588 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0 solid #e5e7eb;
+}
+
+:root {
+  --basic-color: rgba(231, 250, 254, 1);
+  --gradient-to: #eff6ff;
+  --gradient-from: #fff;
+  --gradient-stops: var(var(--gradient-from), var(var(--gradient-to), hsla(0, 0%, 100%, 0)));
+}
+
+.tomato {
+  right: 626px;
+  width: 3rem;
+  top: 20rem;
+  position: absolute;
+}
+
+.lettuce {
+  width: 5rem;
+  right: 36px;
+  top: 70px;
+  position: absolute;
+}
+
+.meat-piece {
+  top: 40px;
+  right: 510px;
+  width: 6rem;
+  left: 2.5rem;
+  position: absolute;
+}
+
+.onion {
+  top: 35px;
+  right: 180px;
+  width: 4rem;
+  position: absolute;
+}
+
+.more-recipies {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  font-family: 'Inter';
+  padding-bottom: .5rem;
+  padding-top: .5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.more-recipes-titile {
+  display: flex;
+  text-align: left;
+  padding-left: 0;
+  padding-right: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.more-recipies-heading {
+  width: 507px;
+  margin-bottom: 0;
+}
+
+.more-recipies-head {
+  font-size: 3rem;
+  line-height: 1;
+  opacity: 1;
+  color: rgb(0, 0, 0);
+  letter-spacing: -.04em;
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+
+.more-recipies-text {
+  width: 620px;
+}
+
+.more-recipies-para {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.more-recipies-template {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+
+.Recipie-card {
+  display: flex;
+  position: relative;
+  height: 350px;
+  flex-direction: column;
+  border-radius: 1.5rem;
+  padding-bottom: 2rem;
+  flex-basis: 25%;
+
+}
+
+@media(max-width: 1280px) {
+  .Recipie-card {
+    flex-basis: 40%;
+    text-align: center;
+  }
+}
+.recipe-card-img {
+  transition-duration: .15s;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  border-radius: 1.5rem;
+  width: 100%;
+  height: 230px;
+}
+
+.recipe-card-image {
+  object-fit: cover;
+  border-radius: 1.5rem;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.recipe-card-title {
+  opacity: 1;
+  color: rgb(0, 0, 0);
+  letter-spacing: -.04em;
+  line-height: 1.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: .25rem;
+
+}
+
+.instagram-link {
+  font-family: 'Inter';
+}
+
+
+.instagram-page {
+  background-image: linear-gradient(180deg, rgba(231, 249, 253, 0), #e7f9fd);
+
+}
+
+.instagram-page-title {
+  text-align: center;
+}
+
+.istagram-page-sub_title {
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.insta-title {
+  font-weight: 600;
+
+}
+
+.insta-page-txt {
+  color: rgba(0, 0, 0, 0.6);
+  width: 67%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.insta-image-gallery {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 1.25rem;
+  width: 92%;
+  margin-top: 2.5rem;
+ 
+}
+.img-gallery {
+  position: relative;
+  border-radius: .375rem;
+  background-color: rgba(255, 255, 255, 1);
+  padding-bottom: 2rem;
+}
+.insta-image {
+  padding-left: .5rem;
+  padding-right: .5rem;
+  padding-bottom: .25rem;
+  padding-top: .25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.insta-profile {
+  display: flex;
+  flex-direction: column;
+  margin-left: .5rem;
+
+}
+
+.insta-profile-subtxt {
+  font-weight: 600;
+  font-size: .5rem;
+  line-height: 1rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.profile-place {
+  font-size: .5rem;
+  line-height: 1rem;
+}
+
+.insta-blog-description {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  padding-bottom: .5rem;
+  padding-top: .5rem;
+}
+
+.bookmark {
+  position: absolute;
+  right: .5rem;
+
+}
+
+.insta-description {
+  font-size: .75rem;
+  line-height: 1rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.insta-date {
+  font-size: .65rem;
+  line-height: 1rem;
+  padding: .5rem;
+  color: rgba(0, 0, 0, 0.6);
+  bottom: .25rem;
+  position: absolute;
+}
+.btn-insta{
+  padding-bottom: 5rem;
+  margin-top: 4rem;
+}
+
+.instagram-btn {
+  transition-duration: .15s;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 1rem;
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  text-transform: none;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.25rem;
+  padding-top: 1.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* ------------------ Mobile (large phones): max-width: 600px ------------------ */
+@media (max-width: 600px) {
+  /* Styles for large mobile devices */
+  .banner {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner-text {
+    text-align: center;
+    padding: 0;
+  }
+
+  .w-32 {
+    width: 24%;
+  }
+
+  .title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .text-para {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .carousel-icon {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .banner-img {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .chef_txt, .date {
+    font-size: 10px;
+  }
+
+  .view-recipe {
+    font-size: 12px;
+  }
+
+  .catogories {
+    padding: 10px;
+  }
+
+  .ctgry-menue {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+
+  .chef-title {
+    font-size: 24px;
+  }
+
+  .more-recipies-template {
+    display: grid;
+    grid-template-columns: (1, 1fr);
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .recipe-card-title {
+    font-size: 16px;
+  }
+
+  .insta-title {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .insta-page-txt {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+/* ------------------ Tablet (portrait): max-width: 768px ------------------ */
+@media (max-width: 768px) {
+  /* Styles for portrait tablets */
+  .banner {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner-text {
+    text-align: center;
+    padding: 0;
+  }
+
+  .w-32 {
+    width: 28%;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .text-para {
+    font-size: 14px;
+  }
+
+  .carousel-icon {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .banner-img {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .chef_txt, .date {
+    font-size: 12px;
+  }
+
+  .view-recipe {
+    font-size: 14px;
+  }
+
+  .catogories {
+    padding: 20px;
+  }
+
+  .ctgry-menue {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .chef-title {
+    font-size: 28px;
+  }
+
+  .more-recipies-template {
+    display: grid;
+    grid-template-columns: (1, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .recipe-card-title {
+    font-size: 18px;
+  }
+
+  .insta-title {
+    font-size: 28px;
+  }
+
+  .insta-page-txt {
+    font-size: 14px;
+  }
+}
+
+/* ------------------ Tablet (landscape): max-width: 1024px ------------------ */
+@media (max-width: 1024px) {
+  /* Styles for landscape tablets */
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .banner-text {
+    text-align: center;
+  }
+
+  .banner-img {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .text-para {
+    font-size: 14px;
+  }
+
+  .carousel-icon {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .chef_txt, .date {
+    font-size: 12px;
+  }
+
+  .view-recipe {
+    font-size: 14px;
+  }
+
+  .catogories {
+    padding: 20px;
+  }
+
+  .ctgry-menue {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .chef-title {
+    font-size: 28px;
+  }
+
+  .more-recipies-template {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .recipe-card-title {
+    font-size: 18px;
+  }
+
+  .insta-title {
+    font-size: 28px;
+  }
+
+  .insta-page-txt {
+    font-size: 14px;
+  }
+}
+
+/* ------------------ Laptop/Desktop: min-width: 1025px ------------------ */
+@media (min-width: 1025px) {
+  /* Styles for laptops and desktops */
+  .banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+  }
+
+  .banner-text {
+    text-align: left;
+  }
+
+  .banner-img {
+    width: 50%;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .text-para {
+    font-size: 16px;
+  }
+
+  .carousel-icon {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .chef_txt, .date {
+    font-size: 14px;
+  }
+
+  .view-recipe {
+    font-size: 16px;
+  }
+
+  .catogories {
+    padding: 40px;
+  }
+
+  .ctgry-menue {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+  }
+
+  .chef-title {
+    font-size: 32px;
+  }
+
+  .more-recipies-template {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 40px;
+  }
+
+  .recipe-card-title {
+    font-size: 20px;
+  }
+
+  .insta-title {
+    font-size: 32px;
+  }
+
+  .insta-page-txt {
+    font-size: 16px;
+  }
+}
+
