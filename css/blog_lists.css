@@ -602,6 +602,10 @@ color: #FFFFFF99;
 
     .taste_box_1 {
         flex-direction: column;
+        flex-basis: 100%;
+    }
+    .taste_box_1 img{
+        width: 100%;
     }
 
     .taste_box .img_box {
