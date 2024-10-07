@@ -221,9 +221,6 @@ color: #fff;
 .inbox_box .container{
     width: 100%;
 height: 442px;
-top: 2223px;
-left: 80px;
-gap: 0px;
 border-radius: 60px;
 opacity: 1;
     background: #E7F9FD;
@@ -275,7 +272,6 @@ height: 220px;
 height: 90.96px;
 rotate: -30deg;
 }
-
 .search_box_2{
     margin-top: 60px;
 }
@@ -329,7 +325,7 @@ right: 4px;
     right: 20px;
    }
    .search_box_2 input{
-    width: 300px;
+    width: 350px;
     height: 50px;
    }
    .search_box_2  button{
@@ -390,7 +386,7 @@ right: 4px;
 .blog_list .content_box,
 .blog_list_1 .content_box {
     flex-basis: 65%;
-    padding: 20px 0px 0px 30px;
+    padding: 10px 0px 0px 30px;
 }
 
 .blog_list .content_box h1,
@@ -413,17 +409,22 @@ right: 4px;
     text-align: left;
     color: #00000099;
 }
-
+#unique_div{
+    margin-top: -25px;
+}
 .user {
     display: flex;
     align-items: center;
     padding-top: 20px;
+    position: relative;
 }
 
 .user .user_img img {
     width: 40px;
     height: 40px;
     border-radius: 20px;
+    object-fit: cover;
+    margin-top: 10px;
 }
 
 .user_img {
@@ -435,9 +436,17 @@ right: 4px;
     font-size: 16px;
     font-weight: 700;
     padding-left: 20px;
-    padding-top: 10px;
+    margin-top: 15px;
 }
-
+.line2{
+    position: absolute;
+    top: 45px;
+    left: 42%;
+    width: 20px;
+    height: 1px;
+    background-color:  #0000001A;
+    rotate: 90deg;
+}
 .user .date h1 {
     font-family: Inter;
     font-size: 14px;
@@ -463,7 +472,7 @@ right: 4px;
 
 .taste_box_1 {
     display: flex;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .taste_box .img_box {
@@ -607,6 +616,9 @@ color: #FFFFFF99;
     .taste_box .content_box h1{
         padding-top: 20px;
     }
+    #inbox{
+        padding: 0px 10px;
+    }
     .inbox_content_1 h1{
         font-size: 40px;
     }
@@ -621,6 +633,36 @@ color: #FFFFFF99;
 @media screen and (min-width:991px) and (max-width:1440px){
     .taste_box_1{
         margin-bottom: 40px;
+    }
+}
+@media screen and (min-width:1440px) and (max-width:2560px){
+    #unique_div{
+        margin-top: 20px;
+    }
+    .ad_section{
+        margin-top: 50px;
+    }
+    .taste_box_1{
+        margin: 50px 0px;
+    }
+    .taste_box_1 img{
+        width: 400px;
+        height: 180px;
+    }
+}
+@media screen and (min-width:2560px) and (max-width:10000px){
+    .taste_box_1{
+        margin: 60px 0px;
+    }
+    .taste_box_1 img{
+        width: 400px;
+        height: 180px;
+    }
+    .ad_box{
+        margin-top: 100px;
+    }
+    .blog_list_1 p{
+        padding: 0px 20px;
     }
 }
 /* pagination */
