@@ -283,7 +283,7 @@
 @media (max-width: 600px) {
   /* Styles for large mobile devices */
   .banner {
-    
+    padding: 10px;
     flex-direction: column;
     align-items: center;
   }
@@ -365,7 +365,7 @@
 @media (max-width: 768px) {
   /* Styles for portrait tablets */
   .banner {
-    
+    padding: 10px;
     flex-direction: column;
     align-items: center;
   }
@@ -393,8 +393,8 @@
   }
 
   .banner-img {
-    width: 80%;
-    margin-top: 20px;
+    width: 100%;
+    
   }
 
   .chef_txt, .date {
@@ -446,7 +446,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    padding: 20px;
   }
 
   .banner-text {
@@ -454,8 +454,8 @@
   }
 
   .banner-img {
-    width: 80%;
-    margin-top: 20px;
+    width: 100%;
+    
   }
 
   .title {
@@ -520,7 +520,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-   
+    
   }
 
   .banner-text {
@@ -528,7 +528,8 @@
   }
 
   .banner-img {
-    width: 50%;
+    width: 100% ;
+    
   }
 
   .title {
