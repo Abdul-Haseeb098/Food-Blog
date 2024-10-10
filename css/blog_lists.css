@@ -442,7 +442,7 @@ padding-bottom: 10px;
     position: absolute;
     width: 65%;
     height:auto;
-    top: 50%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 0;
@@ -451,7 +451,7 @@ padding-bottom: 10px;
 #star_img_1{
     position: absolute;
     height: auto;
-    top: 56%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -502,6 +502,9 @@ color: white;
     .blog_box .row .col-lg-8{
         margin-top: 10px;
     }   
+    .line_1{
+        display: none;
+    }
 }
 /* pagination */
 #pagination{
