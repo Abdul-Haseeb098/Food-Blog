@@ -505,6 +505,9 @@ color: white;
     .line_1{
         display: none;
     }
+    #star_img{
+        display: none;
+    }
 }
 /* pagination */
 #pagination{
