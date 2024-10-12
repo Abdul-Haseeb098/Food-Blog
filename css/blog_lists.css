@@ -76,7 +76,7 @@
     top: 79px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1150px) {
     .logo{
         padding-top: 10px;
     }
@@ -506,6 +506,11 @@ color: white;
         display: none;
     }
     #star_img{
+        display: none;
+    }
+}
+@media only screen and (max-width:1150px) and (min-width:109px){
+    .inbox_img_3{
         display: none;
     }
 }
