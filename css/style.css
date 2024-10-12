@@ -4,6 +4,9 @@
   box-sizing: border-box;
   border: 0 solid #e5e7eb;
 }
+body{
+  overflow-x: hidden;
+}
 
 :root {
   --basic-color: rgba(231, 250, 254, 1);
@@ -11,7 +14,39 @@
   --gradient-from: #fff;
   --gradient-stops: var(var(--gradient-from), var(var(--gradient-to), hsla(0, 0%, 100%, 0)));
 }
+.carousel-container{
+  position: relative;
+            width: 100%;
+            overflow: hidden;
+            
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  width: 50px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
 
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.arrow-left {
+  left: 10px;
+}
+
+.arrow-right {
+  right: 10px;
+}
 .banner {
   line-height: 1.1;
   border-radius: 2rem;
@@ -23,6 +58,7 @@
   display: flex;
   margin-bottom: 25px;
   height: 90vh;
+ 
 }
 
 .text-xs {
