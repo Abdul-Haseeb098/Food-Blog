@@ -109,12 +109,13 @@
 
 }
 
-@media(max-width: 1280px) {
+@media(min-width: 1280px) {
   .Recipie-card {
     flex-basis: 40%;
     text-align: center;
   }
 }
+
 .recipe-card-img {
   transition-duration: .15s;
   transition-property: all;
@@ -182,14 +183,16 @@
   gap: 1.25rem;
   width: 92%;
   margin-top: 2.5rem;
- 
+
 }
+
 .img-gallery {
   position: relative;
   border-radius: .375rem;
   background-color: rgba(255, 255, 255, 1);
   padding-bottom: 2rem;
 }
+
 .insta-image {
   padding-left: .5rem;
   padding-right: .5rem;
@@ -253,7 +256,8 @@
   bottom: .25rem;
   position: absolute;
 }
-.btn-insta{
+
+.btn-insta {
   padding-bottom: 5rem;
   margin-top: 4rem;
 }
@@ -282,15 +286,19 @@
 /* ------------------ Mobile (large phones): max-width: 600px ------------------ */
 @media (max-width: 600px) {
   /* Styles for large mobile devices */
-  .banner {
-    padding: 10px;
-    flex-direction: column;
-    align-items: center;
+
+  .banner-img {
+    flex-basis: 100%;
+
+
+  }
+
+  .image-recipe {
+    width: 100%;
   }
 
   .banner-text {
-    text-align: center;
-    padding: 0;
+    display: none;
   }
 
   .w-32 {
@@ -317,8 +325,19 @@
     margin-top: 15px;
   }
 
-  .chef_txt, .date {
-    font-size: 10px;
+  .chef-txt {   
+    text-align: center; 
+    width: 100%;
+    padding-left: 5rem;
+  }
+  .chef-title{
+    text-align: center;
+    padding-left: 6rem;
+  }
+  .chef-btn{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 
   .view-recipe {
@@ -335,8 +354,16 @@
     gap: 15px;
   }
 
-  .chef-title {
-    font-size: 24px;
+  .be-chef {
+    flex-direction: column;
+    width: 100%;
+    text-align: right;
+    justify-content: center;
+  }
+  .insta-image-gallery{
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
   }
 
   .more-recipies-template {
@@ -344,6 +371,18 @@
     grid-template-columns: (1, 1fr);
     gap: 15px;
     padding: 10px;
+  }
+
+  .favourite-recipes {
+    gap: 2.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .square-card {
+    display: none;
   }
 
   .recipe-card-title {
@@ -361,18 +400,24 @@
   }
 }
 
-/* ------------------ Tablet (portrait): max-width: 768px ------------------ */
+/* ------------------ Tablet (portrait): min-width: 768px ------------------ */
 @media (max-width: 768px) {
   /* Styles for portrait tablets */
-  .banner {
-    padding: 10px;
-    flex-direction: column;
-    align-items: center;
-  }
+
 
   .banner-text {
+    display: none;
+  }
+
+  .banner-img {
+    flex-basis: 100%;
+    justify-content: center;
     text-align: center;
-    padding: 0;
+
+  }
+
+  .image-recipe {
+    width: 100%;
   }
 
   .w-32 {
@@ -392,13 +437,40 @@
     padding: 10px;
   }
 
-  .banner-img {
-    width: 100%;
-    
+  .square-card {
+    display: none;
   }
 
-  .chef_txt, .date {
-    font-size: 12px;
+  .chef-txt {   
+    text-align: center; 
+    width: 100%;
+    padding-left: 5rem;
+  }
+  .chef-title{
+    text-align: center;
+    width: 100%;
+    padding-left: 6rem;
+  }
+  .chef-btn{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .insta-image-gallery{
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .be-chef {
+    flex-direction: column;
+    width: 100%;
+    text-align: right;
+    justify-content: center;
+  }
+  .chef-img{
+
+    width: 100%;
   }
 
   .view-recipe {
@@ -413,6 +485,14 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
+  }
+
+  .favourite-recipes {
+    gap: 2.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   .chef-title {
@@ -439,88 +519,16 @@
   }
 }
 
-/* ------------------ Tablet (landscape): max-width: 1024px ------------------ */
-@media (max-width: 1024px) {
-  /* Styles for landscape tablets */
-  .banner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-
-  .banner-text {
-    text-align: center;
-  }
-
-  .banner-img {
-    width: 100%;
-    
-  }
-
-  .title {
-    font-size: 24px;
-  }
-
-  .text-para {
-    font-size: 14px;
-  }
-
-  .carousel-icon {
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  .chef_txt, .date {
-    font-size: 12px;
-  }
-
-  .view-recipe {
-    font-size: 14px;
-  }
-
-  .catogories {
-    padding: 20px;
-  }
-
-  .ctgry-menue {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  .chef-title {
-    font-size: 28px;
-  }
-
-  .more-recipies-template {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
-  }
-
-  .recipe-card-title {
-    font-size: 18px;
-  }
-
-  .insta-title {
-    font-size: 28px;
-  }
-
-  .insta-page-txt {
-    font-size: 14px;
-  }
-}
 
 /* ------------------ Laptop/Desktop: min-width: 1025px ------------------ */
 @media (min-width: 1025px) {
+
   /* Styles for laptops and desktops */
   .banner {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+
   }
 
   .banner-text {
@@ -528,8 +536,8 @@
   }
 
   .banner-img {
-    width: 100% ;
-    
+    width: 100%;
+
   }
 
   .title {
@@ -545,7 +553,8 @@
     padding: 12px;
   }
 
-  .chef_txt, .date {
+  .chef_txt,
+  .date {
     font-size: 14px;
   }
 
@@ -571,7 +580,9 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-    padding: 40px;
+
+    justify-content: center;
+    text-align: center;
   }
 
   .recipe-card-title {
@@ -586,4 +597,3 @@
     font-size: 16px;
   }
 }
-
