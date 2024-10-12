@@ -112,6 +112,9 @@ p {
 .w-32 {
   width: 8rem;
 }
+.insta-icon{
+  margin-right:.25rem ;
+}
 
 .font-medium {
   margin-bottom: 2rem;
@@ -128,6 +131,7 @@ p {
   padding-left: .25rem;
   font-size: 1rem;
 }
+
 
 i {
   height: 20;
@@ -572,7 +576,7 @@ img {
 .time {
   width: 18px;
   height: 18px;
-  margin-right: .75rem;
+  margin-right: .25rem;
 
 }
 
