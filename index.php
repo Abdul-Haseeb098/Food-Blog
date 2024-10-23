@@ -1,48 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>foodieland</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="css/contact.css">
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/recipe.css">
-</head>
-
-<body>
-  <div class="navbar">
-    <div class="logo">
-      <a href="#">Foodieland<span>.</span></a>
-    </div>
-    <ul class="nav-links" id="navLinks" style="padding-top: 20px;">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#">Recipes</a></li>
-      <li><a href="blog_lists.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="#">About Us</a></li>
-    </ul>
-    <div class="social-icons">
-      <a href="#"><i class="fa-brands fa-facebook"></i></a>
-      <a href="#"><i class="fa-brands fa-twitter"></i></a>
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-    </div>
-    <div class="hamburger" id="hamburger">
-      <i class="fa fa-bars"></i>
-    </div>
-  </div>
+<?php
+    include("components/navbar.php");
+?>
   <div class="wraper">
     <div class="container">
       <div class="banner  my-10 ">
@@ -568,13 +526,13 @@
         </div>
         <div class="more-recipies-template">
           <div class="Recipie-card">
-            <a href="recipie.html">
+            <a href="recipie.php">
               <div class="recipe-card-img">
                 <img src="assets/images/recipes/food-1.png" alt="" class="recipe-card-image">
               </div>
             </a>
             <!-- <div class="heart-shape"><span>favourite-recipes</span></div> -->
-            <a href="recipie.html">
+            <a href="recipie.php">
               <div>
                 <h2 class="recipe-card-title">Mixed Tropical Fruit Salad with Superfood Boost</h2>
               </div>
@@ -592,13 +550,13 @@
           </div>
 
           <div class="Recipie-card">
-            <a href="recipie.html">
+            <a href="recipie.php">
               <div class="recipe-card-img">
                 <img src="assets/images/recipes/food-2.png" alt="" class="recipe-card-image">
               </div>
             </a>
             <!-- <div class="heart-shape"><span>favourite-recipes</span></div> -->
-            <a href="recipie.html">
+            <a href="recipie.php">
               <div>
                 <h2 class="recipe-card-title">Big and Juicy Wagyu Beef Cheeseburger</h2>
               </div>
@@ -616,13 +574,13 @@
           </div>
 
           <div class="Recipie-card">
-            <a href="recipie.html">
+            <a href="recipie.php">
               <div class="recipe-card-img">
                 <img src="assets/images/recipes/food-3.png" alt="" class="recipe-card-image">
               </div>
             </a>
             <!-- <div class="heart-shape"><span>favourite-recipes</span></div> -->
-            <a href="recipie.html">
+            <a href="recipie.php">
               <div>
                 <h2 class="recipe-card-title">Healthy Japanese Fried Rice with Asparagus</h2>
               </div>
@@ -640,13 +598,13 @@
           </div>
 
           <div class="Recipie-card">
-            <a href="recipie.html">
+            <a href="recipie.php">
               <div class="recipe-card-img">
                 <img src="assets/images/recipes/food-4.png" alt="" class="recipe-card-image">
               </div>
             </a>
             <!-- <div class="heart-shape"><span>favourite-recipes</span></div> -->
-            <a href="recipie.html">
+            <a href="recipie.php">
               <div>
                 <h2 class="recipe-card-title">Cauliflower Walnut Vegetarian Taco Meat</h2>
               </div>
@@ -664,13 +622,13 @@
           </div>
 
           <div class="Recipie-card">
-            <a href="recipie.html">
+            <a href="recipie.php">
               <div class="recipe-card-img">
                 <img src="assets/images/recipes/food-5.png" alt="" class="recipe-card-image">
               </div>
             </a>
             <!-- <div class="heart-shape"><span>favourite-recipes</span></div> -->
-            <a href="recipie.html">
+            <a href="recipie.php">
               <div>
                 <h2 class="recipe-card-title">Rainbow Chicken Salad with Almond Honey Mustard Dressing</h2>
               </div>
@@ -688,13 +646,13 @@
           </div>
 
           <div class="Recipie-card">
-            <a href="recipie.html">
+            <a href="recipie.php">
               <div class="recipe-card-img">
                 <img src="assets/images/recipes/food-6.png" alt="" class="recipe-card-image">
               </div>
             </a>
             <!-- <div class="heart-shape"><span>favourite-recipes</span></div> -->
-            <a href="recipie.html">
+            <a href="recipie.php">
               <div>
                 <h2 class="recipe-card-title">Barbeque Spicy Sandwiches with Chips </h2>
               </div>
@@ -712,13 +670,13 @@
           </div>
 
           <div class="Recipie-card">
-            <a href="recipie.html">
+            <a href="recipie.php">
               <div class="recipe-card-img">
                 <img src="assets/images/recipes/food-7.png" alt="" class="recipe-card-image">
               </div>
             </a>
             <!-- <div class="heart-shape"><span>favourite-recipes</span></div> -->
-            <a href="recipie.html">
+            <a href="recipie.php">
               <div>
                 <h2 class="recipe-card-title">Firecracker Vegan Lettuce Wraps - Spicy! </h2>
               </div>
@@ -736,13 +694,13 @@
           </div>
 
           <div class="Recipie-card">
-            <a href="recipie.html">
+            <a href="recipie.php">
               <div class="recipe-card-img">
                 <img src="assets/images/recipes/food-11.png" alt="" class="recipe-card-image">
               </div>
             </a>
             <!-- <div class="heart-shape"><span>favourite-recipes</span></div> -->
-            <a href="recipie.html">
+            <a href="recipie.php">
               <div>
                 <h2 class="recipe-card-title">Chicken Ramen Soup with Mushroom </h2>
               </div>
@@ -785,32 +743,7 @@
     </div>
   </div>
   <!--footer-->
-  <footer>
-    <div class="foot" style="padding-top: 120px;">
-      <div class="logo">
-        <a href="#">Foodieland<span>.</span></a>
-        <p style="padding-top: 20px; padding-left: 40px;">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-      </div>
-      <ul class="nav-links" id="navLinks" style="margin-right: 20px;">
-        <li><a href="#">Recipes</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">About Us</a></li>
-      </ul>
-    </div>
-    <div class="line-1"></div>
-    <div class="foot-2">
-      <a href="#" class="footer-text"> © 2020 Flowbase. Powered by <span style="color: orangered;">Webflow</span></a>
-      <div class="social-icons" style="margin-left: 10px;">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      </div>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-</body>
-
-</html>
+ 
+  <?php
+    include("components/footer.php");
+  ?>

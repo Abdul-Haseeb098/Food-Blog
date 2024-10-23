@@ -1,41 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foodieland</title>
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-</head>
-<body>
-    <!--navbar-->
-    <div class="navbar">
-        <div class="logo">
-            <a href="#">Foodieland<span>.</span></a>
-        </div>
-        <ul class="nav-links" id="navLinks" style="padding-top: 20px;">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Recipes</a></li>
-            <li><a href="blog_lists.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="#">About Us</a></li>
-        </ul>
-        <div class="social-icons">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        </div>
-        <div class="hamburger" id="hamburger">
-            <i class="fa fa-bars"></i>
-        </div>
-    </div>
-    <div class="line"></div>
+<?php
+    include("components/navbar.php");
+?>
     <!--img-->
 <section id="form">
     <div class="form-heading">
@@ -86,27 +51,9 @@
     <button class="submit_btn" >Submit</button>
 </section>
  <!--inbox-->
- <section id="inbox" class="mb-5">
-    <div class="inbox_box">
-        <div class="container">
-            <div class="inbox_content">
-            <div class="inbox_content_1">
-            <h1>Deliciousness to your inbox</h1>
-            <p>Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqut enim ad minim </p>
-            <div class="search_box_1">
-                <input type="text" placeholder="Your email address...">
-                <button class="search_btn">Search</button>
-            </div>
-            <div class="inbox_img">
-                <img src="assets/images/inbox2.png" alt="" class="inbox_img_1">
-                <img src="assets/images/inbox1.png" alt="" class="inbox_img_2">
-                <img src="assets/images/inbox3.png" alt="" class="inbox_img_3">
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-  </section>
+ <?php
+    include("components/inbox.php");
+  ?>
 <!-- recipe -->
 <section id="recipe">
     <div class="recipe_logo">
@@ -186,29 +133,7 @@
     </div>
 </section>
 <!--footer-->
-<footer>
-    <div class="foot" style="padding-top: 120px;">
-        <div class="logo">
-            <a href="#">Foodieland<span>.</span></a>
-            <p style="padding-top: 20px; padding-left: 40px;">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
-        </div>
-        <ul class="nav-links" id="navLinks" style="margin-right: 20px;">
-            <li><a href="#">Recipes</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">About Us</a></li>
-        </ul>
-    </div>
-    <div class="line-1"></div>
-    <div class="foot-2">
-       <a href="#" class="footer-text" > © 2020 Flowbase. Powered by <span style="color: orangered;">Webflow</span></a>
-       <div class="social-icons" style="margin-left: 10px;">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-    </div>
-    </div>
-</footer>
-<script src="food.js"></script>
-</body>
-</html>
+
+<?php
+    include("components/footer.php");
+  ?>

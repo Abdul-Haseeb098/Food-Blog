@@ -1,51 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Foodieland</title>
-  <link rel="stylesheet" href="css/blog_lists.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body>
-  <div class="navbar">
-    <div class="logo">
-      <a href="#">Foodieland<span>.</span></a>
-    </div>
-    <ul class="nav-links pt-3" id="navLinks">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="blog_lists.html">Recipes</a></li>
-      <li><a href="blog_post.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="#">About Us</a></li>
-    </ul>
-    <div class="social-icons">
-      <a href="#"><i class="fa-brands fa-facebook"></i></a>
-      <a href="#"><i class="fa-brands fa-twitter"></i></a>
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
-    </div>
-    <div class="hamburger" id="hamburger">
-      <i class="fa fa-bars"></i>
-    </div>
-  </div>
-  <div class="line"></div>
+<?php
+    include("components/blog_list.php");
+?>
   <main>
     <div class="heading">
       <h1>Blog & Article</h1>
@@ -69,7 +24,7 @@
       <div class="row" style="padding: 0px 50px">
         <div class="col-md-8">
           <div class="blog_box">
-            <a href="blog_post.html" style="text-decoration: none; color: inherit;">
+            <a href="blog_post.php" style="text-decoration: none; color: inherit;">
               <div class="blog_list" style="margin-bottom: 40px">
                 <div class="img_box">
                   <img src="assets/images/list_1.png" alt="" />
@@ -312,66 +267,12 @@
 
   <!-- inbox_img -->
 
-  <section id="inbox" class="mb-5">
-    <div class="inbox_box">
-      <div class="container">
-        <div class="inbox_content">
-          <div class="inbox_content_1">
-            <h1>Deliciousness to your inbox</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
-              eiusmod tempor <br />
-              incididunt ut labore et dolore magna aliqut enim ad minim
-            </p>
-            <div class="search_box_2">
-              <label for="">
-                <input type="text" placeholder="Enter your email address..." />
-                <button>Subscribe</button>
-              </label>
-            </div>
-            <div class="inbox_img">
-              <img src="assets/images/inbox2.png" alt="" class="inbox_img_1" />
-              <img src="assets/images/inbox1.png" alt="" class="inbox_img_2" />
-              <img src="assets/images/inbox3.png" alt="" class="inbox_img_3" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <?php
+    include("components/inbox.php");
+  ?>
 
   <!-- footer -->
 
-  <footer>
-    <div class="foot" style="padding-top: 120px">
-      <div class="logo">
-        <a href="#">Foodieland<span>.</span></a>
-        <p style="padding-top: 20px; padding-left: 40px">
-          Lorem ipsum dolor, sit amet consectetur adipisicing.
-        </p>
-      </div>
-      <ul class="nav-links" id="navLinks" style="margin-right: 20px">
-        <li><a href="#">Recipes</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">About Us</a></li>
-      </ul>
-    </div>
-    <div class="line-1"></div>
-    <div class="foot-2">
-      <a href="#" class="footer-text">
-        © 2020 Flowbase. Powered by
-        <span style="color: orangered">Webflow</span></a>
-      <div class="social-icons" style="margin-left: 10px">
-        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- /inbox_img -->
-  <script src="food.js"></script>
-</body>
-
-</html>
+  <?php
+    include("components/footer.php");
+  ?>
